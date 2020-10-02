@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel4Brews</title>
+
+	<link rel="stylesheet" type="text/css" href="main1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="main1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <script type="text/javascript" src="signup.js"> </script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="login.js"> </script>
+	<script>
+		function openOffers(){
+			window.open("offers.html","_self");
+		}
+		function openPackage(){
+			window.open("packages.html","_self");
+		}
+		function openGuide(){
+			window.open("guiders.html","_self");
+		}
+	</script>
+</head>
+<body>
+
+	<!---------------------------------------------------------------header------------------------------------------------------>
+
+	<div class="nav_bar">
+		<div class="search_box">
+			Travel4Brews<image src="https://media2.giphy.com/media/6IqtvKuoVen105wKPM/200w.webp?cid=ecf05e47is1cqmvr8kibdy8yixknl1a5xf2pc6qekdm5z8f6&rid=200w.webp" id="logo">
+
+			<input type="text" name="search" id="search">
+			<span class="input-group-text"><i class="fa fa-search"></i></span>
+		</div>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="newcart.html"><i class="fa fa-shopping-cart"></i>cart</a></li>
+				<li><button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button></li>
+				<li><button onclick="document.getElementById('id02').style.display='block'">LOG IN</button></li>
+			</ul>
+		</div>
+    </div>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------>
+    
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="main1.html" target="_self">
+        <!-- for red cross -->
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjFlGjKCXNImlItaSk5qApzQt7fegdYm7-Ug&usqp=CAU" alt="Avatar" class="avatar">
+    </div>
+    
+        <!-- sign up page start -->
+        <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+    
+        <br>
+        <table style="width:100%;" border="0" cellpadding="4">
+            <!-- first name and last name row -->
+            <tr>
+            <td class="label_col"><b><strong style="color:red;">*</strong>First Name</b></td>
+            <td class="label_col"><b><strong style="color:red;">*</strong>Last Name</b></td>
+    
+            </tr>
+            <!-- name input -->
+            <tr>
+            <td><input type="text" placeholder="Enter Your First Name" id="firstName" name="firstName" class="txtsignup" onblur="validateFirstName();" required></td>
+            <td><input type="text" class="txtsignup" placeholder="Enter Your Last Name" id="lastName" name="lastName" onblur="validateLastName();" required></td>
+            </tr>
+            <!-- message(vaild or not) -->
+                <tr>
+            <td><span id="firstNamePrompt">&nbsp;</span></td>
+            <td><span id="lastNamePrompt">&nbsp;</span></td>
+            </tr>
+        </table>
+        <!-- email -->
+    
+        <label for="email"><b><strong style="color:red;">*</strong>Email</b></label>
+        <input type="mail" placeholder="Enter Email" id="signupmail" name="email" onblur="validateMails();" required>
+        <span id="mailsPrompt1">&nbsp;</span></br>
+        <!-- password -->
+    <br>
+        <label for="psw"><b>*Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="pwd" onblur="validatePassword();" required>
+        <span id="passPrompt">&nbsp;</span></br>
+    
+    
+    <!-- confirm password -->
+    <br>
+        <label for="psw-repeat"><b><strong style="color:red;">*</strong>Confirm Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="Pwd" onblur="validateRePassword();" required>
+        <span id="repassPrompt">&nbsp;</span></br>
+    <!-- remember me -->
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+    
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+        <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+    
+        </div>
+        </div>
+    </form>
+    </div>
+    <!--script>
+    
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+    
+    </script-->
+    
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    
+    <div id="id02" class="modal1">
+
+        <form class="modalcontent animate" action="main_1.html" target="_self" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="closed" title="Close Modal">&times;</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjFlGjKCXNImlItaSk5qApzQt7fegdYm7-Ug&usqp=CAU" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="mail" placeholder="Enter Username" name="uname" id="mails" onblur="validateMail();" required>
+            <span id="mailsPrompt">&nbsp;</span></br>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="pwd" onblur="validatePassword();"required>
+            <span id="passPrompt">&nbsp;</span></br>
+
+            <button type="submit" class="btn">Login</button>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+            
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbutton">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+        </form>
+    </div>
+
+    <!--script>
+      // Get the modal
+    var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script-->
+	<!------------------------------------------------------------------------------------------------------------------------------------->
+	
+	<!----------------------------------------------------------image slideshow-------------------------------------------------------->
+
+    <div class="imagess">
+        <img class="mySlides" src="https://tripstring.com/images/homeslider/slider1.jpg" id="mySlides">
+	</div>
+	<script>
+		
+		var images=["https://www.honeymoonbug.com/images/banner.jpg",
+					"https://b.zmtcdn.com/data/collections/51d4072438f1a65d1ac305de030feaf3_1555486732.jpg",
+					"https://b.zmtcdn.com/data/collections/77ff7053be77b95e4e7d95d8a4256228_1529489617.jpg",
+					"https://www.honeymoonbug.com/images/tamilnadu-tour-package.jpg",
+					"https://tripstring.com/images/homeslider/slider1.jpg"
+					
+		]
+		var i=0;
+		function slides() {
+			document.getElementById("mySlides").src=images[i];
+			if(i<images.length-1)
+			i++;
+			else
+			i=0;
+		}
+		setInterval(slides,2000)
+	</script>
+
+	<!----------------------------------------------------------------------------------------------------------------------------->
+
+	<!------------------------------------------------------------special places------------------------------------------------------->
+	
+	<!--hr class="gap"-->
+
+	<div class="heading"><marquee>SPECIAL ATTRACTIONS</marquee></div>
+
+	<div class="block1">
+		<div class="imgtxt">
+		<a href="main2.html"><img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/09/Ooty-In-December.jpg" class="sp-img"></a>
+		<div class="middle1">
+			<div class="text">OOTY</div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30" class="blockbtn">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openOffers()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);" ></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openPackage()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openGuide()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+		
+	</div>
+
+	<div class="block2">
+		<div class="imgtxt">
+		<img src="https://www.gosahin.com/go/p/b/t/1517600562_Darjeeling-Toy-Train2.jpg" class="sp-img">
+		<div class="middle2">
+			<div class="text">DARJEELING</div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30" class="blockbtn">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+	</div>
+
+	<div class="block3">
+		<div class="imgtxt">
+		<img src="https://www.holidify.com/images/bgImages/GOA.jpg" class="sp-img">
+		<div class="middle3">
+			<div class="text">GOA</div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30" class="blockbtn">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+	</div>
+
+	<div class="block4">
+		<div class="imgtxt">
+		<img src="https://travelandleisureindia.in/wp-content/uploads/2018/12/Houseboat-Stays-in-Srinagar-Feature.jpg"  class="sp-img">
+		<div class="middle4">
+			<div class="text">SRINAGAR</div>
+		</div>
+		</div>
+		<div class="button1">
+		<div class="button2">
+			<table cellpadding="30" class="blockbtn">
+			<form>
+				<tr><td><input type="button" value="OFFERS" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="PACKAGES" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+				<tr><td><input type="button" value="GUIDE" onclick="openWin()" onmouseover="largebutton(this);" onmouseout="normalbutton(this);"></td></tr>
+			</form>
+			</table>
+		</div>
+		</div>
+	</div>
+
+	<!--hr class="gap">
+
+	<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+	<!--------------------------------------------------------------image slider--------------------------------------------------------------->
+
+	<!--div class="is">
+		<img class="mySlides" src="https://www.honeymoonbug.com/images/darjeeling-tour-package.jpg" >
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/453942c164672e1cae5311fe1327614e_1528292302.jpg">
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/77ff7053be77b95e4e7d95d8a4256228_1529489617.jpg">
+		<img class="mySlides" src="https://b.zmtcdn.com/data/collections/4bf1a90c99f70d5e486cf47d3315c51e_1528954757.jpeg">
+	</div-->
+
+
+
+
+
+
+
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<!----------------------------------------------------------------footer---------------------------------------------------------------------->
+
+	<section>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-1">
+						<h1>Useful Links</h1>
+						<p>Privacy Policy</p>
+						<p>Terms of Use</p>
+						<p>Return Policy</p>
+						<p>Discount Coupons</p>
+					</div>
+					<div class="col-1">
+						<h1>Company</h1>
+						<p>About Us</p>
+						<p>Contact Us</p>
+						<p>Career</p>
+						<p>Affilate</p>
+                    </div>
+					<div class="col-1">
+						<h1>Follow Us On</h1>
+						<p><i class="fa fa-facebook-official"></i>Facebook</p>
+						<p><i class="fa fa-youtube-play"></i>Youtube</p>
+						<p><i class="fa fa-linkedin"></i>Linkedin</p>
+						<p><i class="fa fa-twitter"></i>Twitter</p>	
+					</div>
+					<div class="col-1 footer-image">
+						<h1>Download App</h1>
+						<img src="https://img.techpowerup.org/200817/footer-image.png">
+					</div>
+				</div>
+				<hr>
+		</div>
+	</div>
+    </section>
+
+</body>
+</html>
