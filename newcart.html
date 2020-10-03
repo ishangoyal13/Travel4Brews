@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Cart</title>
+	<link type="text/css" rel="stylesheet" href="main2.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+</head>
+<body>
+
+		<!-----------------------header------------------------------------------>
+
+	<div class="nav_bar">
+		<div class="search_box">
+			Travel4Brews<image src="https://media2.giphy.com/media/6IqtvKuoVen105wKPM/200w.webp?cid=ecf05e47is1cqmvr8kibdy8yixknl1a5xf2pc6qekdm5z8f6&rid=200w.webp" id="logo">
+
+			<input type="text" name="search" id="search">
+			<span class="input-group-text"><i class="fa fa-search"></i></span>
+		</div>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="newcart.html"><i class="fa fa-shopping-cart"></i>cart</a></li>
+				<li><button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button></li>
+				<li><button onclick="document.getElementById('id02').style.display='block'">LOG IN</button></li>
+			</ul>
+		</div>
+    </div>
+
+    <!------------------------------------login------------------------------------------------------------->
+
+
+
+
+	<!--------------------------------------main cart----------------------------------------->
+
+
+	<div class="cart">
+    <form action="thanks.html">
+		<table class="cart-table">
+			<tr>
+				<td colspan="2">
+					<h3>Personal Details</h3>
+				</td>
+				<td colspan="2">
+					<h3>Payment</h3>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="fname"><i class="fa fa-user"></i> Full Name</label><br>
+            		<input type="text" id="fname" name="firstname" placeholder="John M. Doe" 
+            		onblur="up('fname')" required>
+				</td>
+				<td colspan="2">
+					<label for="fname">Accepted Cards</label><br>
+						<i class="fa fa-cc-visa" style="color:navy;"></i>
+			            <i class="fa fa-cc-amex" style="color:blue;"></i>
+			            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+			            <i class="fa fa-cc-discover" style="color:orange;"></i>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="email"><i class="fa fa-envelope"></i> Email</label><br>
+            		<input type="text" id="email" name="email" placeholder="john@example.com" onblur="show()">
+				</td>
+				<td colspan="2">
+					 <label for="cname">Name on Card</label><br>
+            		 <input type="text" id="cname" name="cardname" placeholder="John More Doe" 
+            		 onblur="up('cname')">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="adr"><i class="fa fa-address-card-o"></i> Address</label><br>
+            		<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+				</td>
+				<td colspan="2">
+					<label for="ccnum">Credit card number</label><br>
+            		<input type="tel" id="ccnum" name="cardnumber" placeholder="1111222233334444" 
+            		onblur="check()" pattern="[0-9]{16}">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="city"><!--i class="fa fa-institution"--></i>No. Of Travellers</label><br>
+            		<input type="number" id="city" name="city" placeholder="" onblur="up('city')" min="1" max="10">
+				</td>
+				<td colspan="2">
+					<label for="expmonth">Exp Month</label><br>
+            		<input type="tel" id="expmonth" name="expmonth" placeholder="September" >
+				</td>
+			</tr>
+			<tr>
+				<td class="sub">
+					<label for="state">State</label><br>
+                	<input type="text" id="state" name="state" placeholder="PB" onblur="up('state')">
+				</td>
+				<td class="sub">
+					<label for="zip">Zip</label><br>
+                	<input type="tel" id="zip" name="zip"  placeholder="10001 " onblur="zip()">
+				</td>
+				<td class="sub">
+					<label for="expyear">Exp Year</label><br>
+                	<input type="tel" id="expyear" name="expyear" placeholder="2025" onblur="year()">
+				</td>
+				<td class="sub">
+					<label for="cvv">CVV</label><br>
+                	<input type="tel" id="cvv" name="cvv" pattern="[0-9][0-9][0-9]" placeholder="352" onblur="cvv()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<label>
+          				<input type="checkbox"  name="sameadr" required>&nbsp;Terms and Conditions
+       				</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+        			<input type="submit" value="Book The Tour" class="btn" >
+				</td>
+			</tr>
+        </table>
+    </form>
+	</div>
+
+
+	<!--------------------------------footer--------------------------------------------------->
+
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-1">
+						<h1>Useful Links</h1>
+						<p>Privacy Policy</p>
+						<p>Terms of Use</p>
+						<p>Return Policy</p>
+						<p>Discount Coupons</p>
+					</div>
+					<div class="col-1">
+						<h1>Company</h1>
+						<p>About Us</p>
+						<p>Contact Us</p>
+						<p>Career</p>
+						<p>Affilate</p>
+					</div>
+					<div class="col-1">
+						<h1>Follow Us On</h1>
+						<p><i class="fa fa-facebook-official"></i>Facebook</p>
+						<p><i class="fa fa-youtube-play"></i>Youtube</p>
+						<p><i class="fa fa-linkedin"></i>Linkedin</p>
+						<p><i class="fa fa-twitter"></i>Twitter</p>	
+					</div>
+					<div class="col-1 footer-image">
+						<h1>Download App</h1>
+						<img src="https://img.techpowerup.org/200817/footer-image.png">
+					</div>
+				</div>
+				<hr>
+		</div>
+	</div>
+	</section>
+
+
+
+
+	<script src="main2.js"></script>
+
+</body>
+</html>
