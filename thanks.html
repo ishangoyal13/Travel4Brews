@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel4Brews</title>
+
+    <link rel="stylesheet" type="text/css" href="guiders.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function openCart() {
+            window.open("newcart.html","_self");
+        }
+        function email(){
+            var e = document.getElementById("inputEmail1").value;
+            if(e == 0){
+                document.getElementById("msg").style.color="Red";
+                document.getElementById("msg").innerHTML="Please enter your email";
+                document.getElementById("emailHelp").style.display="none";
+            }
+            else{
+                document.getElementById("msg").style.color="Green";
+                document.getElementById("msg").innerHTML="Valid email";
+                document.getElementById("emailHelp").style.display="none";
+            }
+        }
+        function message(){
+            var m = document.getElementById("formControlTextarea1").value;
+            if(m != 0){
+                document.getElementById("textmsg").style.color="Green";
+                document.getElementById("textmsg").innerHTML="Thanks for writing!";
+            }
+            else{
+                
+            }
+        }
+        function inputName1(){
+            var i = document.getElementById("inputName").value;
+            if(i == 0){
+                document.getElementById("day").style.color="Red";
+                document.getElementById("day").innerHTML="Sir please enter your name";
+                document.getElementById("nameHelp").style.display="none";
+            }
+            else{
+                document.getElementById("day").style.color="Green";
+                document.getElementById("day").innerHTML="Hope you have a good day " + i.toUpperCase();
+                document.getElementById("nameHelp").style.display="none";
+            }
+        }
+    </script>
+    <style>
+        /*--------------------------------------------------footer----------------------------------*/
+
+
+.footer {
+	/*margin-top: 20%;*/
+	background-color: black;
+	color: white;
+	/*text-align: center;*/
+    padding:25px 0px;
+    overflow: hidden;
+}
+.footer h1{
+	font-size: 15px;
+	margin: 25px 0px;
+}
+.footer p{
+	font-size: 12px;
+}
+
+hr
+{
+	margin-top:10px;
+	background-color: white;
+}
+
+.footer .row .fa
+{
+	padding-right: 20px;
+	font-size:15px;
+}
+.footer-image img{
+	width:150px;
+}
+.row{
+    width: 350%;
+}
+/*----------------------------navigation bar----------------------------------*/
+
+body{
+	overflow: none;
+}
+.nav_bar{
+	width:100%;
+	height:50px;
+	background-color: #123C69;
+	top: 0px;
+	border-bottom: 3px solid grey;
+	margin-bottom: 20px
+}
+#logo{
+	height:50px;
+	opacity:1;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.search_box{
+	display: inline-flex;
+    width: 50%;
+    color: lavender;
+    margin-left: 10px;
+    margin-top: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+}
+#search{
+	width: 40%;
+	height:35px;
+	border-radius:25px;
+	margin-top: -1px;
+	margin-left:30px;
+	border:1px solid grey !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius:0 !important;
+	border-bottom-right-radius: 0 !important;
+	box-shadow: none !important;
+	/*display: inline-flex !important;*/
+}
+.input-group-text
+{
+
+	background: lavender !important;
+	border:1px solid grey !important;
+	margin: -1px 10px 10px 0 !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-top-right-radius:20px !important;
+	border-bottom-right-radius: 20px !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	height: 35px;
+}
+.menu-bar{
+	width:40%;
+	height: 57px;
+	float: right;
+
+}
+.menu-bar ul{
+	display: inline-flex;
+	float: right;
+}
+.menu-bar ul li
+{
+	border left: 1px solid grey;
+	list-style-type: none;
+	padding: 10px 35px;
+	height: 46px;
+	text-align: center;
+	background: lavender;
+	cursor: pointer;
+}
+.menu-bar ul li a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color:  #191970 ;
+	text-decoration: none;
+}
+.fa-shopping-cart
+{
+	margin-right: 5px;
+}
+button{
+    border: 1px solid lavender;
+    background-color: lavender;
+    font-size: 18px;
+    font-weight: 700;
+    color: #191970;
+}
+#contact{
+    height:650px;
+}
+.message{
+    border:2px solid #191;
+    background-color: white;
+    color: #191;
+    height:50px;
+    width: 165px;
+}
+.message:hover{
+    background-color: #191;
+    color:white;
+}
+pre{
+    font-size:30px;
+    text-align: center;
+    font-family: Roboto;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+        <!--------------------------------------------- header------------------------------------------------------>
+
+        <div class="nav_bar">
+        <div class="search_box">
+        Travel4Brews<image src="https://media2.giphy.com/media/6IqtvKuoVen105wKPM/200w.webp?cid=ecf05e47is1cqmvr8kibdy8yixknl1a5xf2pc6qekdm5z8f6&rid=200w.webp" id="logo">
+
+        <input type="text" name="search" id="search">
+        <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+        <ul>
+            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>cart</a></li>
+            <li><button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button></li>
+            <li><button onclick="document.getElementById('id02').style.display='block'">LOG IN</button></li>
+        </ul>
+        </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        
+        <pre>Thanks For Visiting Our Site
+    Happy Journey!!
+Our guide will contact you soon.</pre>
+        </marquee>
+        
+        <section id="contact" class="container">            
+            <div class="card">
+                <div class="card-header">
+                    <h1> Contact Me </h1>                                    
+                </div>
+                <div class="card-body">
+                    <form action="main1.html">
+                        <div class="form-group">
+                            <label for="inputEmail1">Email address</label>
+                            <input placeholder="Your Email" type="email" class="form-control" id="inputEmail1" onblur="email()" aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                            <span id="msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" onblur="inputName1()" required>
+                            <small id="nameHelp" class="form-text text-muted">Please let me know your name.</small>
+                            <span id="day"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formControlTextarea1">Your Message</label>
+                            <textarea class="form-control" id="formControlTextarea1" rows="6" onblur="message()"></textarea>
+                            <span id="textmsg"></span>
+                        </div>
+
+                        <button class="message" type="submit" onclick="alert('Your message has been sent')">Send Message</button>
+                    </form>
+                </div>
+            </div>            
+        </section>
+    <!------------------------------------------------------------------------------------------------------------------>
+
+    <!----------------------------------------------------------------footer---------------------------------------------------------------------->
+
+
+<section>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <h1>Useful Links</h1>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Return Policy</p>
+            <p>Discount Coupons</p>
+          </div>
+          <div class="col-1">
+            <h1>Company</h1>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Career</p>
+            <p>Affilate</p>
+                    </div>
+          <div class="col-1">
+            <h1>Follow Us On</h1>
+            <p><i class="fa fa-facebook-official"></i>Facebook</p>
+            <p><i class="fa fa-youtube-play"></i>Youtube</p>
+            <p><i class="fa fa-linkedin"></i>Linkedin</p>
+            <p><i class="fa fa-twitter"></i>Twitter</p>
+          </div>
+          <div class="col-1 footer-image">
+            <h1>Download App</h1>
+            <img src="https://img.techpowerup.org/200817/footer-image.png">
+          </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+    </section>
