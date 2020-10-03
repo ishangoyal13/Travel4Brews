@@ -1,0 +1,385 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*----------------------------navigation bar----------------------------------*/
+
+
+.nav_bar{
+	width:100%;
+	height:50px;
+	background-color: #123C69;
+	top: 0px;
+	border-bottom: 3px solid grey;
+	margin-bottom: 20px
+}
+#logo{
+	height:50px;
+	opacity:1;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.search_box{
+	display: inline-flex;
+    width: 50%;
+    color: lavender;
+    margin-left: 10px;
+    margin-top: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+}
+#search{
+	width: 40%;
+	height:35px;
+	border-radius:25px; 
+	margin-top: -1px;
+	margin-left:30px;
+	border:1px solid grey !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius:0 !important;
+	border-bottom-right-radius: 0 !important;
+	box-shadow: none !important;
+	/*display: inline-flex !important;*/
+}
+.input-group-text
+{
+	
+	background: lavender !important;
+	border:1px solid grey !important;
+	margin: -1px 10px 10px 0 !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-top-right-radius:20px !important;
+	border-bottom-right-radius: 20px !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	height: 35px;
+}
+.menu-bar{
+	width:40%;
+	height: 57px;
+	float: right;
+	
+}
+.menu-bar ul{
+	display: inline-flex;
+	float: right;
+}
+.menu-bar ul li
+{
+	border left: 1px solid grey;
+	list-style-type: none;
+	padding: 10px 35px;
+	height: 46px;
+	text-align: center;
+	background: lavender;
+	cursor: pointer; 
+}
+.menu-bar ul li a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color:  #191970 ;
+	text-decoration: none;
+}
+.fa-shopping-cart
+{
+	margin-right: 5px;
+}
+button{
+    border: 1px solid lavender;
+    background-color: lavender;
+    font-size: 18px;
+    font-weight: 700;
+    color: #191970;
+}
+
+
+/*---------------------------------------------images(main2)-------------------------------*/
+.heading{
+	text-align: center;
+}
+.images{
+	margin-top: 10px;
+}
+.image1{
+	width:800px;
+	height:500px;
+}
+.image2{
+	width:350px;
+	height:250px;
+	/*padding:10px 10px;*/
+
+}
+.image-section{
+	margin:auto;
+}
+.ooty2{
+	padding: 0px 0px 5px 10px;
+	/*border: 2px solid black;*/
+}
+.ooty3{
+	padding: 5px 0px 0px 10px;
+	/*border: 2px solid black;*/
+}
+.about-image{
+	
+	width:800px;
+	text-align: center;
+	margin:0px auto;
+	margin-top: 20px;
+}
+.txt{
+	text-decoration: bold;
+	font-size: 25px;
+	color: rgb(60 60 60);
+}
+
+/*-------------------------------------main content container----------------------------*/
+.images{
+	width:100%;
+	height: 100%;
+}
+
+/*--------------------------------places to visit-----------------------------------*/
+.heading2{
+	text-align: center;
+	/*margin:0px auto;*/
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.buttons{
+	text-align: center;
+	margin-top: 10px;
+}
+.button1{
+	/*width:30px;
+	height: 20px;*/
+	font-width: bold;
+	font-size: 20px;
+	background-color: white;
+	color: rgb(60 60 60);
+	border:2px solid black;
+	margin:0px 10px;
+	padding:15px;
+}
+.button-images{
+	margin-top: 40px;
+}
+.img-desc{
+	padding-left: 25px;
+}
+.lake1{
+	width:400px;
+	height:300px;
+	/*border:1px solid black; */
+	box-shadow: 5px 5px grey;
+}
+.button1:hover{
+	background-color:gray;
+	color:white;
+}
+
+
+/*---------------------------------hotels recommendation------------------------------------*/
+
+.heading5{
+	text-align: center;
+	/*margin:0px auto;*/
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.hotels{
+	margin:20px auto;
+}
+.hotels1{
+	width:300px;
+	height:200px;
+	margin-left: 50px;
+}
+
+/*-------------------------------------Eating Joints---------------------------------*/
+.heading6{
+	text-align: center;
+	margin-top: 50px;
+	/*margin-left: 480px;*/
+	/*margin-right:40px;*/
+}
+
+.foodimage{
+	height:200px;
+	border-radius:15px;
+	margin-top: 25px;
+	
+}
+.food-row{
+	margin-left: 5px;
+	margin-top: 40px;
+}
+.food-hr{
+	margin-left: 20px;
+	width:350px;
+	color: rgb(60 60 60);
+}
+.food-name{
+	padding-left:32px;
+}
+.foodtxt{
+	padding-left: 10px;
+	font-size: 15px;
+	font-family: sans-serif;
+	text-align-last: center;
+}
+.food-col{
+	box-shadow: 5px 5px 5px 5px grey;
+	border:2px solid rgb(60 60 60);
+	border-radius: 25px;
+	width:400px;
+	height:400px;
+	margin-left: 20px;
+	display: inline-block;
+
+}
+/*----------------------heading 8 (guide section)-------------------------------------*/
+.heading8-image{
+	margin:30px 40%;
+}
+.guide-image{
+	/*border:1px solid grey;*/
+	border-radius: 50%;
+}
+.guide-col{
+	/*margin-left: 15px;*/
+	margin-left:35px;
+	margin-right: 35px;
+	display: inline-block;
+	/*width:400px;*/
+	/*height:500px;*/
+	/*border:2px solid black;*/
+}
+.guide-row{
+	/*border:2px solid black;*/
+	padding:25px;
+}
+.heading8{
+	overflow:hidden;
+}
+.guide-image:hover{
+	width: 250px;
+	height: 250px;
+}
+/*------------------------------------cart form css------------------------------------*/
+
+.cart{
+	border:1px solid grey;
+	width:910px;
+	margin-left: 17%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 25px;
+	background-color: rgb(240,240,240);
+
+}
+.cart-table td{
+	padding: 10px;
+}
+/*.cart-table{
+	margin-left: 5%;
+}*/
+.cart-table input[type=text],input[type=number]{
+	width:400px;
+	height:40px;
+}
+.sub input[type=text],input[type=tel]{
+	width:100%;
+	height:40px;
+	/*padding:5px;*/
+}
+.cart-table input[type=submit]:hover{
+	background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.cart-table input[type=submit]{
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------footer----------------------------------*/
+
+
+.footer{
+	/*margin-top: 50%;*/
+	background-color: black;
+	color: white;
+	/*text-align: center;*/
+	padding:25px 0px; 
+	overflow: hidden;
+	
+}
+.footer h1{
+	font-size: 15px;
+	margin: 25px 0px;
+}
+.footer p{
+	font-size: 12px;
+}
+
+hr
+{
+	margin-top:10px;
+	background-color: white;
+}
+
+.footer .row .fa
+{
+	padding-right: 20px;
+	font-size:15px;
+
+}
+.footer-image img{
+	width:150px;
+
+}
+.row{
+	width: 350%;
+}
+
+/****************************************************offers**************************************/
+.a{
+	display:inline-block;
+	margin:20px 0px;
+	margin-left:150px;
+	padding: 25px;
+	background-color: #ffef96;
+	border-left: 5px solid #feda14;
+	width: 550px;
+}
+.t a{
+	text-decoration: none;
+	color:#263571;
+}
+.a h2{
+	color:#263571;
+}
+.t h1{
+	text-align: center;
+	font-size:60px;
+	font-family: Roboto;
+	letter-spacing: 5px;
+	font-weight: 600;
+}
