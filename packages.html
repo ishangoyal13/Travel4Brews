@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel4Brews</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /*----------------------------navigation bar----------------------------------*/
+
+
+.nav_bar{
+	width:100%;
+	height:50px;
+	background-color: #123C69;
+	top: 0px;
+	border-bottom: 3px solid grey;
+	margin-bottom: 20px
+}
+#logo{
+	height:50px;
+	opacity:1;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.search_box{
+	display: inline-flex;
+    width: 50%;
+    color: lavender;
+    margin-left: 10px;
+    margin-top: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+}
+#search{
+	width: 40%;
+	height:35px;
+	border-radius:25px; 
+	margin-top: -1px;
+	margin-left:30px;
+	border:1px solid grey !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius:0 !important;
+	border-bottom-right-radius: 0 !important;
+	box-shadow: none !important;
+	/*display: inline-flex !important;*/
+}
+.input-group-text
+{
+	
+	background: lavender !important;
+	border:1px solid grey !important;
+	margin: -1px 10px 10px 0 !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-top-right-radius:20px !important;
+	border-bottom-right-radius: 20px !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	height: 35px;
+}
+.menu-bar{
+	width:40%;
+	height: 57px;
+	float: right;
+	
+}
+.menu-bar ul{
+	display: inline-flex;
+	float: right;
+}
+.menu-bar ul li
+{
+	border left: 1px solid grey;
+	list-style-type: none;
+	padding: 10px 35px;
+	height: 46px;
+	text-align: center;
+	background: lavender;
+	cursor: pointer; 
+}
+.menu-bar ul li a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color:  #191970 ;
+	text-decoration: none;
+}
+.fa-shopping-cart
+{
+	margin-right: 5px;
+}
+button{
+    border: 1px solid lavender;
+    background-color: lavender;
+    font-size: 17px;
+    font-weight: 700;
+    color: #191970;
+}
+
+/*-----------------------------------------table---------------------------------------*/
+
+
+.checked {
+    color: gray;
+}
+.t{
+    border-style: solid;
+    border-color:#123C69;
+}
+tr,th{
+    border: 2px solid black;
+}
+td:hover {
+    background-color:#F49F1C;
+}
+#cp{
+    font-size: 35px;
+    /*color:#191970;*/
+    border:3px solid #123C69;
+    text-align:center;
+}
+table{
+	margin-bottom: 20px;
+    width: 60%;
+}
+td{
+    font-weight: 600;
+}
+tr:nth-child(even){
+        background-color: #fde9d9;
+    }
+tr{
+	border-color:#f79646;
+}
+th{
+	background-color: #f79646;
+    color:white;
+    letter-spacing: 4px;
+}
+/*--------------------------------------------------footer----------------------------------*/
+
+
+.footer {
+	/*margin-top: 20%;*/
+	background-color: black;
+	color: white;
+	/*text-align: center;*/
+    padding:25px 0px; 
+    overflow: hidden;
+}
+.footer h1{
+	font-size: 15px;
+	margin: 25px 0px;
+}
+.footer p{
+	font-size: 12px;
+}
+
+hr
+{
+	margin-top:10px;
+	background-color: white;
+}
+
+.footer .row .fa
+{
+	padding-right: 20px;
+	font-size:15px;
+}
+.footer-image img{
+	width:150px;
+}
+.row{
+    width: 350%;
+}
+
+
+</style>
+</head>
+<body>
+    <!---------------------------------------------------------------header------------------------------------------------------>
+
+	<div class="nav_bar">
+		<div class="search_box">
+			Travel4Brews<image src="https://media2.giphy.com/media/6IqtvKuoVen105wKPM/200w.webp?cid=ecf05e47is1cqmvr8kibdy8yixknl1a5xf2pc6qekdm5z8f6&rid=200w.webp" id="logo">
+
+			<input type="text" name="search" id="search">
+			<span class="input-group-text"><i class="fa fa-search"></i></span>
+		</div>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>cart</a></li>
+				<li><button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button></li>
+				<li><button onclick="document.getElementById('id02').style.display='block'">LOG IN</button></li>
+			</ul>
+		</div>
+    </div>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------>
+<div>
+    <table class="t" border="3" cellspacing="0" cellpadding="30" align="center">
+        <th id="cp" colspan="4">PACKAGES WE OFFER</th>
+        <tr>
+        <td style="font-size:20px;"><b>Maximum persons</b></td>
+        <td style="font-size:20px;"><b>No. of days</b></td>
+        
+        <td style="font-size:20px;"><b>Star rating</b></td>
+        <td style="font-size:20px;"><b>Package price</b></td>
+        </tr>
+        <tr>
+        <td>1 Adult</td>
+        <td>3 nights 4 days</td>
+        
+        <td>
+        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star-half-full checked"></span>
+        <span class="fa fa-star-o"></span>
+        <div>
+        </td>
+        <td> Rs. 5500  </td>
+        </tr>
+        <tr>
+        <td>2 Adults</td>
+        <td>5 nights 6 days</td>
+        
+        <td>
+        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half-full checked"></span>
+        <div>
+        </td>
+        <td> Rs. 8700</td>
+        </tr>
+        <tr>
+        <td>2 Adults 1 Kid</td>
+        <td>6 nights 7 days</td>
+        
+        <td>
+        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star-half-full checked"></span>
+        <span class="fa fa-star-o"></span>
+        <div>
+        </td>
+        <td> Rs. 9600</td>
+        <tr>
+        <td>2 Adult 2 Kids</td>
+        <td>7 nights 8 days</td>
+        
+        <td>
+        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-o"></span>
+        <div>
+        </td>
+        <td> Rs. 11700  </td>
+        </tr>
+        </tr>
+        </table>
+    </div>
+
+    <!----------------------------------------------------------------footer---------------------------------------------------------------------->
+
+	<section>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-1">
+						<h1>Useful Links</h1>
+						<p>Privacy Policy</p>
+						<p>Terms of Use</p>
+						<p>Return Policy</p>
+						<p>Discount Coupons</p>
+					</div>
+					<div class="col-1">
+						<h1>Company</h1>
+						<p>About Us</p>
+						<p>Contact Us</p>
+						<p>Career</p>
+						<p>Affilate</p>
+                    </div>
+					<div class="col-1">
+						<h1>Follow Us On</h1>
+						<p><i class="fa fa-facebook-official"></i>Facebook</p>
+						<p><i class="fa fa-youtube-play"></i>Youtube</p>
+						<p><i class="fa fa-linkedin"></i>Linkedin</p>
+						<p><i class="fa fa-twitter"></i>Twitter</p>	
+					</div>
+					<div class="col-1 footer-image">
+						<h1>Download App</h1>
+						<img src="https://img.techpowerup.org/200817/footer-image.png">
+					</div>
+				</div>
+				<hr>
+		</div>
+	</div>
+    </section>
+</body>
+</html>
